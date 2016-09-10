@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+	    // You can also use "$(window).load(function() {"
+	    $(function () {
+
+	      // Slideshow 4
+	      $("#slider4").responsiveSlides({
+	        auto: false,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        namespace: "callbacks",
+	        before: function () {
+	          $('.events').append("<li>before event fired.</li>");
+	        },
+	        after: function () {
+	          $('.events').append("<li>after event fired.</li>");
+	        }
+	      });
+
+	    });
+	 </script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<header>
+		<span class="logo">MINIMO</span>
+
+		<nav>
+			<ul>
+				<li>Lifestyle</li>
+				<li>Photodiary</li>
+				<li>Music</li>
+				<li>Travel</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+   <!-- Slideshow 4 -->
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="images/banner.jpg" alt="">
+        </li>
+        <li>
+          <img src="images/banner2.jpg" alt="">   
+        </li>
+        <li>
+          <img src="images/banner3.jpg" alt="">    
+        </li>
+        <li>
+          <img src="images/banner4.jpg" alt="">    
+        </li>
+      </ul>
+    </div>
+
+
+		<!-- <img src="images/banner.jpg" class="banner"> -->
+
+		<div class="post-wrapper">	
+			<div class="maipost">
+				<h3>Photodiary</h3>
+				<h1>The perfect weekend getaway</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+				<h3>Leave a comment</h3>
+			</div>
+
+
+			
+			<div class="blog-wrapper">
+				<div class="left-post">
+					<div class="post-img"> 
+
+						<img src="images/img-post.jpg">
+						
+						<div class="post-hover-link">
+							<span class="phl-text"><a href="#">read more</a></span>
+						</div>
+
+					</div>
+					
+					<h3>Lifestyle</h3>
+					<h1>More than just a music festival </h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+				</div>
+			</div>
+
+
+		<div class="blog-wrapper">
+			<div class="right-post">
+
+				<div class="post-img"> 
+
+					<img src="images/coffe.jpg">
+					
+					<div class="post-hover-link">
+						<span class="phl-text"><a href="#">read more</a></span>
+					</div>
+
+				</div>
+
+				
+				<h3>Lifestyle</h3>
+				<h1>Life tasties better with coffee</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			</div>
+		</div>
+
+		<div class="blog-wrapper">
+			<div class="left-post">
+				<div class="post-img"> 
+
+					<img src="images/americandream.jpg">
+					
+					<div class="post-hover-link">
+						<span class="phl-text"><a href="#">read more</a></span>
+					</div>
+
+				</div>
+				
+				<h3>Photodiary</h3>
+				<h1>Life tasties better with coffee</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			</div>
+		</div>
+
+		<div class="blog-wrapper">	
+			<div class="right-post">
+				<div class="post-img"> 
+					<img src="images/man-in-hat.jpg">
+					
+					<div class="post-hover-link">
+						<span class="phl-text"><a href="#">read more</a><span>
+					</div>
+				</div>
+				
+				<h3>Photodiary</h3>
+				<h1>More than just a music festival </h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis nostrudexercitation.</p>
+			</div>
+		</div>	
+
+
+
+		</div>
+	</div>
+
+	<div class="sign-up">
+			<div class="sign-up-inner">
+				<span class="sign">Sign up for our newsletter!</span>
+				<div class="e-mail-input">
+					<input type="text" placeholder="Enter a valid e-mail address" size="40px">
+					<img src="images/send-icon.jpg" class="send-icon">
+				</div>
+				
+			</div>
+	</div>
+	
+	<div class="container">
+		<div class="post-wrapper">	
+
+		<div class="blog-wrapper">	
+			<div class="left-post">
+
+				<div class="post-img"> 
+
+					<img src="images/girl-hat.jpg">
+					
+					<div class="post-hover-link">
+						<span class="phl-text"><a href="#">read more</a></span>
+					</div>
+
+				</div>
+				
+				<h3>Photodiary</h3>
+				<h1>Life tasties better with coffee</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			</div>
+		</div>	
+
+
+		<div class="blog-wrapper">	
+			<div class="right-post">
+
+				<div class="post-img"> 
+
+					<img src="images/road.jpg">
+					
+					<div class="post-hover-link">
+						<span class="phl-text"><a href="#">read more</a></span>
+					</div>
+
+				</div>
+				
+				<h3>Photodiary</h3>
+				<h1>More than just a music festival </h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			</div>
+		</div>
+
+			
+			
+			<div class="load-more">
+				<span class="load-more-text">Load more</span>
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer-inner">
+
+			<div class="rules-block">
+				<p>Terms and conditions</p>
+				<p>Privacy</p>
+			</div>
+
+			<div class="social-block">
+				<p>Follow</p>
+				<a href="https://www.facebook.com"><img src="images/facebook.jpg" alt=""></a>
+				<a href="https://twitter.com"><img src="images/twitter.jpg" alt=""></a>
+				<a href="https://www.instagram.com/"><img src="images/instagram.jpg" alt=""></a>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>

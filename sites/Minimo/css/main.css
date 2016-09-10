@@ -1,0 +1,532 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	/*min-width: 920px;*/
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**********************SLIDER***********************/
+
+.rslides {
+  margin: 0 auto;
+  }
+
+.callbacks_container {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+  }
+
+.callbacks {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.callbacks li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.callbacks img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  border: 0;
+  }
+
+.callbacks_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 52%;
+  left: 0;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../themes/themes.gif") no-repeat left top;
+  margin-top: -45px;
+  }
+
+.callbacks_nav:active {
+  opacity: 1.0;
+  }
+
+.callbacks_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+
+
+/***********************MAIN*************************/
+
+@font-face {
+	font-family: 'Playfair Display';
+    src: url(fonts/playfair-display/PlayfairDisplay-Regular.otf);
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Inconsolata';
+    src: url(fonts/Inconsolata/Inconsolata.otf);
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Cond Light Free';
+    src: url(fonts/IntroCondLightFree.otf);
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+	font-family: 'Playfair Display';
+	font-size: 30px;
+	color: #626262;
+	margin: 30px 0;
+}
+
+h3 {
+	font-family: Intro Cond Light Free;
+	font-size: 15px;
+	color: #626262;
+	text-transform: uppercase;
+	margin: 30px 0;
+}
+
+p {
+	font-family: 'Playfair Display';
+	color: #626262;
+	line-height: 30px;
+	font-size: 15px;
+}
+
+header {
+	max-width: 1060px;
+	height: 160px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+.logo {
+	font-family: Inconsolata;
+	text-transform: uppercase;
+	margin: 60px 0;
+	display: inline-block;
+	font-size: 30px;
+	letter-spacing: 5px;
+}
+
+nav {
+	display: inline-block;
+	float: right;
+	font-family: 'Playfair Display';
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+nav ul {
+	float: right;
+	/*width: 710px;*/
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	float: right;
+	margin: 70px 0px 0px 100px;
+}
+
+nav li:hover {
+	cursor: pointer;
+	opacity: 0.7;
+	color: red;
+}
+
+.container {
+	max-width: 1060px;
+	margin: -30px auto 0;
+	display: block;
+	clear: both;
+}
+
+.banner {
+	max-width: 100%;
+	margin: 0 0 95px 0;
+}
+
+.post-wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	display: block;
+}
+
+.blog-wrapper {
+	width: 50%;
+	display: inline-block;
+	margin: 130px -2px 0;
+}
+
+.right-post {
+	max-width: 420px;
+	float: right;
+	/*display: inline-block;*/
+	position: relative;
+}
+
+.left-post {
+	max-width: 420px;
+	/*margin: 130px 60px 0 0;*/
+	float: left;
+	position: relative;
+}
+
+.post-img {
+	display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.post-hover-link {
+	max-width: 420px;
+	height: 280px;
+	background-color: red;
+	opacity: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Playfair Display';
+	font-size: 40px;
+	position: absolute;
+	cursor: pointer;
+	left:0;
+    bottom:0;
+    right:0;
+    top:0;
+
+ 	-o-transition: all 0.3s linear 0s;
+ 	-webkit-transition: all 0.3s linear 0s;
+ 	-moz-transition: all 0.3s linear 0s;
+ 	-o-transition: all 0.3s linear 0s;
+ 	transition: all 0.3s linear 0s;
+}
+
+.post-img:hover .post-hover-link{
+	display: block;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.phl-text {
+	margin: 120px 0 0 0;
+	display: block;
+}
+
+.phl-text a{
+	text-decoration: none;
+	color: black;
+	border: 1px solid #000000;
+	padding: 0 15px;
+}
+
+.post-img:hover .phl-text {
+	margin-top: 70px;
+	position: relative;
+	bottom: -50px;
+
+	-o-transition: all 0.3s linear 0s;
+	-webkit-transition: all 0.3s linear 0s;
+	-moz-transition: all 0.3s linear 0s;
+	-o-transition: all 0.3s linear 0s;
+	transition: all 0.3s linear 0s;
+}
+
+.sign-up {
+	width: 100%;
+	height: 290px;
+	display: inline-block;
+	background-color: #f0f0f0;
+	margin: 130px auto 0;
+}
+
+.sign-up-inner {
+	display: block;
+	margin: 100px auto;
+}
+
+.sign {
+	color: black;
+	margin: -15px auto 50px;
+	display: block;
+	width: 360px;
+	font-family: 'Playfair Display';
+	font-size: 30px;
+}
+
+input[type="text"] {
+	width: 360px;
+	font-size: 20px;
+	padding: 10px 0;
+	outline:none;
+	border-bottom: 1px solid #000000;
+	background-color: transparent;
+	font-family: 'Playfair Display';
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	z-index: 1;
+
+}
+
+.e-mail-input {
+	width: 360px;
+	font-size: 20px;
+	padding: 10px 0;
+	background-color: transparent;
+	font-family: 'Playfair Display';
+	display: block;
+	margin: 0 auto;
+}
+
+.send-icon{
+	float: right;
+	margin: -30px 0;
+	z-index: 2;
+	cursor: pointer;
+	position: relative;
+}
+
+.load-more {
+	display: block;
+	width: 165px;
+	height: 60px;
+	margin: 160px auto;
+	border: 2px solid #656565;
+	text-align: center;
+	clear: both;
+}
+
+.load-more-text {
+	margin-top: 20px;
+	display: block;
+	font-family: 'Playfair Display';
+	font-size: 20px;
+}
+
+.load-more:hover {
+	cursor: pointer;
+	opacity: 0.7;
+	color: red;
+}
+
+footer {
+	width: 100%;
+	height: 110px;
+	/*display: inline-block;*/
+	background-color: #f0f0f0;
+	/*position: absolute;*/
+	clear: both;
+}
+
+.footer-inner {
+	max-width: 1060px;
+	display: block;
+	margin: 0 auto;
+}
+
+.rules-block p {
+	float: left;
+	margin: 40px;
+}
+
+.rules-block p:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.social-block {
+	float: right;
+	margin: 40px;
+}
+
+.social-block p {
+	display: inline-block;
+}
+
+.social-block img {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.social-block img:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 860px) {
+
+	.logo {
+		font-family: Inconsolata;
+		text-transform: uppercase;
+		/*margin: 60px 0;*/
+		display: inline-block;
+		font-size: 30px;
+		letter-spacing: 5px;
+	}
+
+	nav {
+		display: inline-block;
+		float: right;
+		margin: 0 auto;
+		font-family: 'Playfair Display';
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+
+	nav ul {
+		float: right;
+		width: 125%;
+		list-style: none;
+	}
+
+	nav li {
+		display: inline-block;
+		float: right;
+		/*margin-top: 70px;*/
+		/*margin-bottom: 70px;*/
+		margin-left: 5%;
+	}
+	
+
+	.blog-wrapper {
+		width: 420px;
+		display: block;
+		margin: 50px auto;
+	}
+
+	.right-post {
+		max-width: inherit;
+	}
+
+	.left-post {
+		max-width: inherit;
+	}
+
+	.post-img {
+		display: block;
+    	max-width: 100%;
+    	margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 620px) {
+
+	nav li {
+		display: inline-block;
+		float: right;
+		margin-top: 70px;
+		margin-bottom: 70px;
+		margin-left: 5%;
+	}
+	
+	.footer-inner {
+		max-width: 1060px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.rules-block p {
+		float: left;
+		margin: 40px 10px;
+	}
+
+	.rules-block p:hover {
+		cursor: pointer;
+		opacity: 0.8;
+	}
+
+	.social-block {
+		float: right;
+		margin: 40px 10px;
+	}
+
+	.social-block p {
+		display: inline-block;
+	}
+
+	.social-block img {
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	.social-block img:hover {
+		opacity: 0.7;
+		cursor: pointer;
+	}
+}
